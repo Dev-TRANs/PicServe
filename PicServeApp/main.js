@@ -21,7 +21,7 @@ function doPost(e) {
     const file = folder.createFile(blob);
     
     const fileId = file.getId();
-    const imageUrl = "https://drive.google.com/uc?export=view&id=" + fileId;
+    const imageUrl = "	https://lh3.googleusercontent.com/d/" + fileId;
     
     return ContentService.createTextOutput(JSON.stringify({
       success: true,
