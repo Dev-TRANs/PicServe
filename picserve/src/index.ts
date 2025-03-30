@@ -90,9 +90,9 @@ app.post("/", async (c) => {
       id,
       url: imageUrl,
     });
-
-	const baseUrl = new URL(c.req.url).origin;
-	const accessUrl = `${baseUrl}/${id}`;
+    
+    const baseUrl = new URL(c.req.url).origin;
+    const accessUrl = `${baseUrl}/${id}`;
     
     return c.json({ 
       success: true,
