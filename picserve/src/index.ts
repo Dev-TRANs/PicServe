@@ -39,8 +39,8 @@ app.use('*', cors({
 
 app.post("/", async (c) => {
   try {
-	const { scriptId } = await c.req.parseBody()
-	const webAppUrl = `https://script.google.com/macros/s/${scriptId}/exec`
+    const { scriptId } = await c.req.parseBody()
+    const webAppUrl = `https://script.google.com/macros/s/${scriptId}/exec`
 
     const formData = await c.req.formData();
     const file = formData.get('file');
