@@ -1,0 +1,12 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "picserve" 
+main = "src/index.ts"
+compatibility_date = "<compatibility_date>"
+account_id = "<account_id>"
+workers_dev = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "picserve"
+database_id = "<database_id>"
+preview_database_id = "DB"
